@@ -1,0 +1,19 @@
+.listing {
+  gap: var(--spacer_1);
+}
+
+.listing__item {
+  flex: 0 0 calc((100% / 5) - (var(--spacer_1) / (5 / 4)));
+  height: 20rem;
+  overflow: hidden;
+}
+
+.listing__img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.listing__like-img {
+  max-height: var(--spacer_2);
+}
