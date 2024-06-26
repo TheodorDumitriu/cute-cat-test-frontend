@@ -1,3 +1,7 @@
+.footer {
+  margin-top: auto;
+}
+
 .footer__caption {
   padding-top: var(--spacer_4);
   padding-bottom: var(--spacer_4);

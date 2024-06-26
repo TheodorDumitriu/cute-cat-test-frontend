@@ -6,6 +6,7 @@
   flex: 0 0 calc((100% / 5) - (var(--spacer_1) / (5 / 4)));
   height: 20rem;
   overflow: hidden;
+  border-radius: var(--border_radius_5);
 }
 
 .listing__img {
@@ -16,4 +17,40 @@
 
 .listing__like-img {
   max-height: var(--spacer_2);
+}
+
+.listing__like {
+  position: absolute;
+  top: var(--spacer_1);
+  right: var(--spacer_1);
+  background: var(--white_color);
+  border: none;
+  border-radius: var(--border_radius_50);
+  width: 3.6rem;
+  height: 3.6rem;
+  z-index: 1;
+  cursor: pointer;
+  transition: background-color var(--default_transition);
+}
+
+.listing__like:hover {
+  background-color: var(--pink_color);
+}
+
+@media (max-width: 992px) {
+  .listing__item {
+    flex: 0 0 calc((100% / 4) - (var(--spacer_1) / (4 / 3)));
+  }
+}
+
+@media (max-width: 768px) {
+  .listing__item {
+    flex: 0 0 calc((100% / 3) - (var(--spacer_1) / (3 / 2)));
+  }
+}
+
+@media (max-width: 600px) {
+  .listing__item {
+    flex: 0 0 100%;
+  }
 }

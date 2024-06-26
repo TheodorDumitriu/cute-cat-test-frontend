@@ -31,7 +31,7 @@ const ListingItems = ({ kittyArray, isClickable }) => {
           {isClickable && (
             <button
               onClick={() => handleFavorite(kitty.id, kitty.url)}
-              className="listing__like"
+              className="listing__like d-flex align-items-center justify-content-center"
             >
               <img className="listing__like-img" src={heartImg} alt="heart" />
             </button>
