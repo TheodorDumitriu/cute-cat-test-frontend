@@ -7,6 +7,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import ListingKitties from "./pages/ListingKitties";
 import LovedKitties from "./pages/LovedKitties";
+import TwoCatsToLove from "./pages/TwoCatsToLove";
 
 // Importing components
 import Header from "./components/Header";
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/kitties" element={<ListingKitties />} />
         <Route path="/loved-kitties" element={<LovedKitties />} />
+        <Route path="/two-cats-to-love" element={<TwoCatsToLove />} />
       </Routes>
       <Footer />
     </Router>

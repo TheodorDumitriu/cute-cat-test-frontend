@@ -29,4 +29,8 @@ header {
   .header__list li:first-child {
     display: none;
   }
+
+  .header__list a {
+    font-size: var(--font_14);
+  }
 }
