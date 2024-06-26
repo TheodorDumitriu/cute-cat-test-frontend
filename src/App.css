@@ -1,42 +1,188 @@
-#root {
-  max-width: 1280px;
+/* ----- VARIABLES ----- */
+
+:root {
+  /* ----- COLORS ----- */
+  --grey_color: #f2f2f2;
+  --white_color: #ffffff;
+  --black_color: #000000;
+  --red_color: #e5242a;
+  --blue_color: #0000ff;
+
+  /* ----- COLORS ----- */
+  --border_radius_5: 0.5rem;
+  --border_radius_15: 1.5rem;
+  --border_radius_50: 5rem;
+
+  /* ----- SPACERS ----- */
+  --spacer_1: 1rem;
+  --spacer_2: 2rem;
+  --spacer_3: 3rem;
+  --spacer_4: 4rem;
+  --spacer_5: 5rem;
+  --spacer_6: 6rem;
+  --spacer_7: 7rem;
+  --spacer_8: 8rem;
+
+  /* ----- FONT SIZES ----- */
+  --font_12: 1.2rem;
+  --font_14: 1.4rem;
+  --font_16: 1.6rem;
+  --font_18: 1.8rem;
+  --font_22: 2.2rem;
+  --font_24: 2.4rem;
+  --font_30: 3rem;
+  --font_35: 3.5rem;
+
+  /* ----- FONT WEIGHT ----- */
+  --font_weight_100: 100;
+  --font_weight_200: 200;
+  --font_weight_300: 300;
+  --font_weight_400: 400; /* REGULAR */
+  --font_weight_500: 500;
+  --font_weight_500: 500;
+  --font_weight_600: 600;
+  --font_weight_700: 700; /* BOLD */
+  --font_weight_800: 800;
+  --font_weight_900: 800;
+
+  /* ----- ELEMENT ----- */
+  --container_width: 116rem;
+
+  /* ----- TRANSITIONS ----- */
+  --default_transition: 0.5s ease-in-out;
+
+  /* ----- TRANSITIONS ----- */
+  --default_scale: scale(1.1);
+}
+
+/* ----- FONT DECLARATION ----- */
+
+/* ----- FONTS ----- */
+/* 10px = 1rem */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: var(--font_weight_400);
+  font-size: 1.6rem;
+  font-style: normal;
+  color: var(--black_color);
+  background-color: var(--white_color);
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5.4rem;
+  font-weight: 700;
+  margin-bottom: var(--spacer_3);
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.8rem;
+  margin-bottom: var(--spacer_1);
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.2rem;
+  margin-bottom: var(--spacer_2);
+  line-height: 1.25;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--font_24);
+  margin-bottom: var(--spacer_2);
+}
+
+h5 {
+  font-size: var(--font_18);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ----- GLOBAL ----- */
+.container {
   margin: 0 auto;
-  padding: 2rem;
+  max-width: 100%;
+  width: var(--container_width);
+  padding: 0 var(--spacer_2);
+}
+
+/* ----- HELPERS ----- */
+.txt-center {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.d-block {
+  display: block;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.d-flex {
+  display: flex;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-start {
+  justify-content: flex-start;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.d-inline-flex {
+  display: inline-flex;
+}
+
+.semantic-list {
+  padding: 0;
+}
+
+.position-r {
+  position: relative;
+}
+
+.position-a {
+  position: absolute;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3.2rem;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
