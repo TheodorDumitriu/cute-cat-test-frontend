@@ -10,6 +10,7 @@ import LovedKitties from "./pages/LovedKitties";
 
 // Importing components
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/kitties" element={<ListingKitties />} />
         <Route path="/loved-kitties" element={<LovedKitties />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

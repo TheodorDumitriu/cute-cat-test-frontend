@@ -1,0 +1,8 @@
+.footer__caption {
+  padding-top: var(--spacer_4);
+  padding-bottom: var(--spacer_4);
+}
+
+.footer__caption {
+  font-weight: var(--font_weight_700);
+}
