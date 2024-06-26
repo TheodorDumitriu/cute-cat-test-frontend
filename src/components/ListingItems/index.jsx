@@ -28,13 +28,20 @@ const ListingItems = ({ kittyArray, isClickable }) => {
     <ul className="listing d-flex flex-wrap">
       {kittyArray.map((kitty) => (
         <li className="listing__item position-r" key={kitty.id}>
-          {isClickable && (
+          {isClickable ? (
             <button
               onClick={() => handleFavorite(kitty.id, kitty.url)}
               className="listing__like d-flex align-items-center justify-content-center"
             >
               <img className="listing__like-img" src={heartImg} alt="heart" />
             </button>
+          ) : (
+            <p className="listing__love-score position-a d-flex align-items-center justify-content-center">
+              <span className="listing__love-score-caption">
+                {kitty.loveScore}
+              </span>
+              ❤️
+            </p>
           )}
           <img className="listing__img" src={kitty.url} alt={kitty.id} />
         </li>

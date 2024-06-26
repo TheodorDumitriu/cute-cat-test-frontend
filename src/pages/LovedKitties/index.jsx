@@ -19,7 +19,7 @@ const LovedKitties = () => {
   }
 
   return loading ? (
-    <p>The Loved Kitties are coming!!!</p>
+    <p className="container txt-center">The Loved Kitties are coming!!!</p>
   ) : (
     <main className="main container">
       {/* isClickable is false here because on the this listing we don't need the functionnality */}

@@ -37,6 +37,22 @@
   background-color: var(--pink_color);
 }
 
+.listing__love-score {
+  background-color: var(--white_color);
+  padding: var(--spacer_1);
+  height: 3.6rem;
+  width: 7.6rem;
+  border-radius: var(--border_radius_5);
+  bottom: var(--spacer_1);
+  left: var(--spacer_1);
+  z-index: 1;
+}
+
+.listing__love-score-caption {
+  margin-right: 0.5rem;
+  font-weight: var(--font_weight_700);
+}
+
 @media (max-width: 992px) {
   .listing__item {
     flex: 0 0 calc((100% / 4) - (var(--spacer_1) / (4 / 3)));

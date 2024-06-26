@@ -21,7 +21,7 @@ const ListingKitties = () => {
   }
 
   return loading ? (
-    <p>The Kitties are coming!!!</p>
+    <p className="container txt-center">The Kitties are coming!!!</p>
   ) : (
     <main className="main container">
       <ListingItems kittyArray={kitties} isClickable={true} />
