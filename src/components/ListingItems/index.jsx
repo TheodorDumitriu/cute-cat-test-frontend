@@ -1,11 +1,27 @@
 import "./style.css";
 
+// Importing packages
+import axios from "axios";
+
 // Importing components
 import heartImg from "../../assets/heart.png";
 
 const ListingItems = ({ kittyArray, isClickable }) => {
   const handleFavorite = (id, kittyUrl) => {
-    console.log("add logic for post here");
+    if (id) {
+      const postKitty = async () => {
+        try {
+          const url =
+            "https://site--cute-cat-backend--yq48zswblh2x.code.run/post-cuteness";
+          const kittyIdToPost = { id, kittyUrl };
+
+          await axios.post(url, kittyIdToPost);
+        } catch (error) {
+          console.log(error);
+        }
+      };
+      postKitty();
+    }
   };
 
   return (
