@@ -1,0 +1,18 @@
+header {
+  padding-top: var(--spacer_3);
+  padding-bottom: var(--spacer_3);
+}
+
+.header__logo {
+  font-size: 7rem;
+}
+
+.header__list a {
+  margin-left: var(--spacer_2);
+  transition: var(--default_transition);
+  font-weight: var(--font_weight_700);
+}
+
+.header__list a:hover {
+  color: var(--blue_color);
+}
